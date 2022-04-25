@@ -1,0 +1,59 @@
+
+
+.brewerie{
+  height: 100vh;
+}
+
+
+/* Responsive  */
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+  .country{
+    display: none;
+  }
+  }
+  
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width : 321px) {
+  /* Styles */
+  .country{
+    display: none;
+  }
+
+  }
+  
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width : 320px) {
+  /* Styles */
+  .country{
+    display: none;
+  }
+
+  .city{
+    display: none;
+  }
+
+  .phone{
+    display: none;
+  }
+
+  }
+  
+  
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .country{
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .country{
+    display: block;
+  }
+} 

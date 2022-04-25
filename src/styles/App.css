@@ -1,0 +1,7 @@
+.tab{
+  border-radius: 10px;
+}
+
+.btn-detail:hover{
+  background-color: red;
+}
