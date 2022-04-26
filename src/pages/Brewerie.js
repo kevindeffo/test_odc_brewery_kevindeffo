@@ -2,6 +2,8 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/brewerie.css";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const Brewerie = (props) => {
 	const [breweries, setBrewerie] = useState({});
@@ -22,8 +24,9 @@ const Brewerie = (props) => {
 	const navigate = useNavigate();
 
 	return (
-		<div className="brewerie bg-light ">
-			<div className="container">
+		<div className=" min-vh-100 position-relative " >
+        <Navigation/>
+			<div className="container mt-5 brewery_card" >
 				<div className="row justify-content-center d-flex align-items-center">
 					<div className="col-md-6">
 						<div className="card w-75 mt-5 cards">
@@ -107,6 +110,7 @@ const Brewerie = (props) => {
 					</div>
 				</div>
 			</div>
+            <Footer />
 		</div>
 	);
 };

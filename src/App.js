@@ -22,7 +22,7 @@ function App(props) {
 	});
 	//fin
 
-	// parametrage du parquet datata.net
+	// parametrage du parquet dataTable.net
 	const navigate = useNavigate();
 	useEffect(() => {
 		$(document).ready(function () {
@@ -30,6 +30,8 @@ function App(props) {
 				$("#braweries").DataTable({
 					responsive: true
 				});
+
+				// new $.fn.dataTable.FixedHeader( table );
 			}, 1000);
 		});
 	}, [navigate]);
@@ -45,13 +47,13 @@ function App(props) {
 			</div>
 
 			<div className="container bg-white p-4 tab">
-				<div className="row">
-					<table id="braweries" className="table table-striped table-bordered ">
+				<div className="row table-responsive">
+					<table id="braweries" className="table table-striped table-bordered">
 						<thead>
 							<tr className="table-warning">
 								<th>#</th>
 								<th>Brewery name</th>
-								<th className="country">country</th>
+								<th className="cntry">country</th>
 								<th className="city">City</th>
 								<th className="phone">phone</th>
 								<th>actions</th>
@@ -72,7 +74,7 @@ function App(props) {
 											to={`/brewerie/${key.id}`}
 											className="btn btn-outline-warning  fw-bold btn-detail"
 										>
-											Details
+											Detailse
 										</Link>
 									</td>
 								</tr>

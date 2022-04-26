@@ -1,6 +1,4 @@
-.brewerie{
-    height: 100vh;
-}
+
 
 ul{
     list-style: circle;
@@ -12,4 +10,8 @@ ul{
 
 .cards:hover{
     box-shadow: 0px 0px 0px grey;
+}
+
+.brewery_card{
+    margin-bottom: 500px !important;
 }
